@@ -4,7 +4,7 @@ from django.db import models
 class paises(models.Model):
 
     nombre_pais = models.CharField('Nombre del Pais',max_length=100, blank=False, null=False)
-    sigla_pais = models.CharField('Sigla del Pais', max_length=2, blank=False, null=False)
+    codigo_pais = models.CharField('Codigo del Pais', max_length=2, blank=False, null=False)
     fecha_registro = models.DateField("Fecha de Registro", auto_now=True)
     class Meta:
         verbose_name = "Pais"
